@@ -10,7 +10,7 @@
 <h1>Velkommen til Ông Bà nội/ngoại</h1>
 <p id="myInput">SSID/Navnet til wifi er:<br> GET-A57541</p>
 <div id="btncontainer">
-    <button onclick="myFunction(); unhide()"><i class="fas fa-wifi"></i>    Trykk for å kopiere passord</button>
+    <button onclick="myFunction(); unhide()"><i class="fas fa-wifi"></i>Trykk for å kopiere passord</button>
 </div>
 <div class="exp">
     <p class="and">Kopiert</p>
@@ -77,7 +77,7 @@
 
 <script>
     function myFunction() {
-        var range = document.createRange();
+        const range = document.createRange();
         range.selectNode(document.getElementById("noe"));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(range);
@@ -85,7 +85,7 @@
         window.getSelection().removeAllRanges();
     }
     function unhide() {
-        var hid = document.getElementsByClassName("exp");
+        const hid = document.getElementsByClassName("exp");
         if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
             hid[0].style.visibility = "visible";
         }
