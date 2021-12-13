@@ -39,6 +39,7 @@
             padding-right: 5px;
             padding-left: 5px;
             color: white;
+            animation: glow 1s ease-in-out infinite alternate;
         }
         button {
             text-align: center;
@@ -50,7 +51,6 @@
             margin-top: 100px;
             font-size: 40px;
             border-radius: 100px;
-
         }
         button:hover {
             background-color: #678aff; /* Green */
@@ -68,7 +68,6 @@
             color: lightgrey;
             font-size: 2em;
             font-weight: bolder;
-            animation: glow 1s ease-in-out infinite alternate;
         }
         .and{
             color: white;
@@ -78,11 +77,11 @@
 
         @-webkit-keyframes glow {
             from {
-                text-shadow: 0 0 10px lightgrey, 0 0 20px lightgrey, 0 0 30px rgba(255, 246, 58, 0.96), 0 0 40px rgba(255, 246, 58, 0.96), 0 0 50px rgba(255, 246, 58, 0.96), 0 0 60px rgba(255, 246, 58, 0.96), 0 0 70px rgba(255, 246, 58, 0.96);
+                text-shadow: 0 0 5px lightgrey, 0 0 10px lightgrey, 0 0 15px rgba(255, 246, 58, 0.96), 0 0 20px rgba(255, 246, 58, 0.96), 0 0 25px rgba(255, 246, 58, 0.96), 0 0 30px rgba(255, 246, 58, 0.96), 0 0 35px rgba(255, 246, 58, 0.96);
             }
 
             to {
-                text-shadow: 0 0 20px #fff, 0 0 30px #ffdd00, 0 0 40px #ffdd00, 0 0 50px #ffdd00, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                text-shadow: 0 0 10px #fff, 0 0 15px #ffdd00, 0 0 20px #ffdd00, 0 0 25px #ffdd00, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 80px #ff4da6;
             }
         }
     }
