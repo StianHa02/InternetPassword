@@ -11,7 +11,10 @@
 <p id="myInput" >SSID/Navnet til wifi er:</p>
 <p id="GET">GET-A57541</p>
 <div id="btncontainer">
-    <button onclick="myFunction(); unhide()"><i class="fa fa-wifi" style="font-size:60px"></i>&nbsp;&nbsp;Trykk for å kopiere passord</button>
+    <button onclick="myFunction(); unhide()">
+        <span><i class="fa fa-wifi" style="font-size:60px"></i></span>
+        <span>Trykk for å kopiere passord</span>
+    </button>
 </div>
 <div class="exp">
     <p class="and">Kopiert</p>
@@ -87,7 +90,6 @@
             from {
                 text-shadow: 0 0 5px lightgrey, 0 0 10px lightgrey, 0 0 15px rgba(255, 246, 58, 0.96), 0 0 20px rgba(255, 246, 58, 0.96), 0 0 25px rgba(255, 246, 58, 0.96), 0 0 30px rgba(255, 246, 58, 0.96), 0 0 35px rgba(255, 246, 58, 0.96);
             }
-
             to {
                 text-shadow: 0 0 10px #fff, 0 0 15px #ffdd00, 0 0 20px #ffdd00, 0 0 25px #ffdd00, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 80px #ff4da6;
             }
@@ -110,7 +112,7 @@
             if (hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
                 hid[0].style.visibility = "visible";
             }
-        }, 100);
+        }, 20);
     }
 </script>
 </html>
